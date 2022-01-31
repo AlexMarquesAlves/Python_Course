@@ -8,8 +8,8 @@ number = input('Digite um número Inteiro: ')
 if number.isnumeric():
     number = int(number)
     if (number % 2) == 0:
-        print('Seu número é Par. ')
+        print(f'O número {number} é Par. ')
     else:
-        print('Seu número é ímpar. ')
+        print(f'O número {number} é ímpar. ')
 else:
     print("...Por Favor Digite um número Válido. ")

@@ -4,7 +4,7 @@ descrito, exiba a saudação apropriada. Ex.
 Bom Dia 0-11, Boa Tarde 12-18 e Boa Noite 19-23.
 """
 
-nowTime = input('Que horas são agora em número inteiro? ')
+nowTime = input('Que horas são agora?(0-23) ')
 
 if nowTime.isnumeric():
     nowTime = int(nowTime)
@@ -14,10 +14,10 @@ if nowTime.isnumeric():
 
     if dia:
 
-        print('Bom Dia! ')
+        print(f'São {nowTime}h, Bom Dia! ')
     elif tarde:
-        print('Boa Tarde! ')
+        print(f'São {nowTime}h, Boa Tarde! ')
     elif noite:
-        print('Boa Noite! ')
+        print(f'São {nowTime}h, Boa Noite! ')
 else:
     print('Digite um número inteiro ')

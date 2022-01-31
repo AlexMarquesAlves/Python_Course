@@ -12,10 +12,10 @@ normal = 5 <= qtd_caracteres <= 6
 large = qtd_caracteres >= 7
 
 if short:
-    print('Seu nome é curto')
+    print(f'{qtd_caracteres} caracteres, Seu nome é curto')
 elif normal:
-    print('Seu nome é normal')
+    print(f'{qtd_caracteres} caracteres, Seu nome é normal')
 elif large:
-    print('Seu nome é muito grande')
+    print(f'{qtd_caracteres} caracteres, Seu nome é muito grande')
 else:
     print('Error')
