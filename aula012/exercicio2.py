@@ -13,6 +13,7 @@ if nowTime.isnumeric():
     noite = 19 <= nowTime <= 23
 
     if dia:
+
         print('Bom Dia! ')
     elif tarde:
         print('Boa Tarde! ')
