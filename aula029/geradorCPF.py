@@ -24,11 +24,10 @@ cpf_primeiros_3 = novo_cpf[0:3]
 cpf_segundos_3 = novo_cpf[3:6]
 cpf_terceiros_3 = novo_cpf[6:9]
 cpf_ultimos_digitos = novo_cpf[9::]
-# print(novo_cpf)
+print(f'   Normal:{novo_cpf}')
 n1 = cpf_primeiros_3
 n2 = cpf_segundos_3
 n3 = cpf_terceiros_3
 n4 = cpf_ultimos_digitos
 cpf_formatado = f'{n1}.{n2}.{n3}-{n4}'
-print()
-print(cpf_formatado)
+print(f'Formatado:{cpf_formatado}')
