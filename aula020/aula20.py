@@ -17,8 +17,7 @@ print('---------------------------------------------')
 
 comeca_com_j = False
 for valor in variavel:
-    print(valor)
     if valor.lower().startswith('j'):
         continue
-else:
-    print('Não existe uma palavra que começa com J.')
+    print(valor)
+
