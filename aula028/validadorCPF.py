@@ -20,8 +20,11 @@ while True:
             total = 0
             novo_cpf += str(d)
 
-    msg = 'Válido' if novo_cpf == cpf else 'Inválido'
+    sequencia = novo_cpf == str(novo_cpf[0]) * len(cpf)
+
+    msg = 'Válido' if novo_cpf == cpf and not sequencia else 'Inválido'
     print(msg)
+
     sair = input('Desejas sair? [s]im, ou [n]ão. ')
     if sair == 's':
         break
