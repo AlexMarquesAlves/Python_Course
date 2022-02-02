@@ -10,9 +10,6 @@ def master(func, *args, **kwargs):
     return func(*args, **kwargs)
 
 
-print()
-
-
 def say_hello(name):
     return f'Hello {name}!'
 

@@ -1,4 +1,4 @@
-print()
+print('-' * 12, 'Exercise_1', '-' * 12)
 """
 1 - Crie uma função que recebe uma função-2 como parâmetro e retorne o valor da
 função-2 executada.
