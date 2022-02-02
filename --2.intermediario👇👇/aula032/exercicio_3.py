@@ -15,3 +15,20 @@ aumento_percentual(50, 10)
 aumento_percentual(100, 10)
 aumento_percentual(10, 10)
 aumento_percentual(15, 100)
+
+print("-" * 8, "Resultado no curso", "-" * 8)
+print()
+
+
+def aumento_percentual(valor, percentual):
+    return valor + (valor * percentual / 100)
+
+
+ap = aumento_percentual(50, 10)
+print(ap)
+ap = aumento_percentual(100, 10)
+print(ap)
+ap = aumento_percentual(10, 10)
+print(ap)
+ap = aumento_percentual(15, 100)
+print(ap)
