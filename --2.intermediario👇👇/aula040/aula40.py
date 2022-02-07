@@ -2,7 +2,7 @@
 # union | (une)
 # intersection & (todos os elementos presentes nos dois sets)
 # difference - (elementos apenas no set da esquerda)
-# symetric_difference ^ (Elementos que estão nos dois sets, mas não em ambos)
+# symmetric_difference ^ (Elementos que estão nos dois sets, mas não em ambos)
 print(f'----Exemplos----')
 s1 = {1,2,3,4,5}
 
@@ -69,7 +69,7 @@ s4 = s2 - s1
 print(s3)
 print(s4)
 
-print(f'----Exemplo symetric_difference----')
+print(f'----Exemplo symmetric_difference----')
 
 s1 = {1,2,3,4,5,7}
 s2 = {1,2,3,4,5,6}
