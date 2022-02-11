@@ -6,3 +6,11 @@ Permutação - Ordem importa
 Ambos não repetem valores únicos
 Produtos - Ordem importa e repete valores únicos
 '''
+from itertools import combinations, permutations, product
+
+pessoas = ['Luiz', 'André', 'Eduardo', 'Letícia', 'Fabricio', 'Rosa', ]
+print('----', 'Combinations', '----')
+
+for grupo in combinations(pessoas, 2):
+    print(grupo)
+
