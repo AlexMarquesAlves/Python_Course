@@ -11,7 +11,7 @@ from itertools import combinations, permutations, product
 pessoas = ['Luiz', 'André', 'Eduardo', 'Letícia', 'Fabricio', 'Rosa', ]
 print('----', 'Combinations', '----')
 
-for grupo in combinations(pessoas, 2):
+for grupo in combinations(pessoas, 3):
     print(grupo)
 
 print()
