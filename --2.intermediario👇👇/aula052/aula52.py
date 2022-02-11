@@ -14,3 +14,8 @@ print('----', 'Combinations', '----')
 for grupo in combinations(pessoas, 2):
     print(grupo)
 
+print()
+print('----', 'Permutations', '----')
+
+for grupo in permutations(pessoas, 2):
+    print(grupo)
