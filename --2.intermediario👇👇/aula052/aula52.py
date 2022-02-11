@@ -19,3 +19,9 @@ print('----', 'Permutations', '----')
 
 for grupo in permutations(pessoas, 2):
     print(grupo)
+
+print()
+print('----', 'Products', '----')
+
+for grupo in product(pessoas, repeat=2):
+    print(grupo)
