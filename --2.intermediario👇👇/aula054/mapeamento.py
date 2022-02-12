@@ -10,7 +10,7 @@ print('----> Mapeamento de dicionários')
 
 for produto in produtos:
     print(produto)
-print('----> Preços')
+print('----> Produtos')
 
 
 def aumenta_preco(p):
@@ -21,3 +21,10 @@ def aumenta_preco(p):
 novos_produtos = map(aumenta_preco, produtos)
 for produto in novos_produtos:
     print(produto)
+
+print('----> Pessoas')
+
+nomes = map(lambda p: p['idade'] * 1.20, pessoas)  # nomes = map(lambda p: p['nome'], pessoas)
+
+for pessoa in nomes:
+    print(pessoa)
