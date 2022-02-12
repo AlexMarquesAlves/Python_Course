@@ -14,10 +14,10 @@ print('----> Preços')
 
 
 def aumenta_preco(p):
-    p['preco'] = p['preco'] * 1.05
+    p['preco'] = round(p['preco'] * 1.05, 2)
     return p
 
 
-precos = map(lambda p: p['preco'], produtos)
-for preco in precos:
-    print(preco)
+novos_produtos = map(aumenta_preco, produtos)
+for produto in novos_produtos:
+    print(produto)
