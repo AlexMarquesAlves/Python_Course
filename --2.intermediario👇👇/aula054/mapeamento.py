@@ -10,3 +10,7 @@ print('----> Mapeamento de dicionários')
 
 for produto in produtos:
     print(produto)
+print('----> Preços')
+precos = map(lambda p: p['preco'], produtos)
+for preco in precos:
+    print(preco)
