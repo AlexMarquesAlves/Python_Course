@@ -15,3 +15,7 @@ print(soma_lista)
 print(f'\t\t\t--Produtos--')
 soma_precos = reduce(lambda ac, p: p['preco'] + ac, produtos, 0)
 print(soma_precos / len(produtos))
+
+print(f'\t\t\t--Pessoas--')
+soma_idades = reduce(lambda ac, p: p['idade'] + ac, pessoas, 0)
+print(soma_idades / len(pessoas))
