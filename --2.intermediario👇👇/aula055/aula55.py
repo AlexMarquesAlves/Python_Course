@@ -13,8 +13,31 @@ def filtra(produto):
     return True
 
 
-
 nova_lista = filter(filtra, produtos)
 
 for produto in nova_lista:
     print(produto)
+
+print('----> Filter >> Pessoas')
+
+
+def menor(pessoa):
+    if pessoa['idade'] < 18:
+        return True
+
+
+def maior(pessoa):
+    if pessoa['idade'] >= 18:
+        return True
+
+
+menor_de_idade = filter(menor, pessoas)
+maior_de_idade = filter(maior, pessoas)
+
+print(f'\t\tMenor de idade')
+for pessoas in menor_de_idade:
+    print(pessoas)
+
+print(f'\t\tMaior de idade')
+for pessoas in maior_de_idade:
+    print(pessoas)
