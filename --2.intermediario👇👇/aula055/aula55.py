@@ -37,7 +37,7 @@ maior_de_idade = filter(maior, pessoas)
 print(f'\t\tMenor de idade')
 for pessoas in menor_de_idade:
     print(pessoas)
-
+print()
 print(f'\t\tMaior de idade')
 for pessoas in maior_de_idade:
     print(pessoas)
