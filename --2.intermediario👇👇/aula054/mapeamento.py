@@ -11,6 +11,13 @@ print('----> Mapeamento de dicionários')
 for produto in produtos:
     print(produto)
 print('----> Preços')
+
+
+def aumenta_preco(p):
+    p['preco'] = p['preco'] * 1.05
+    return p
+
+
 precos = map(lambda p: p['preco'], produtos)
 for preco in precos:
     print(preco)
