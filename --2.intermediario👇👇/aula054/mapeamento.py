@@ -26,11 +26,11 @@ print('----> Pessoas')
 
 
 def aumenta_idade(p):
-    p['idade'] = p['idade'] * 1.20
+    p['nova_idade'] = round(p['idade'] * 1.20)
     return p
 
 
-nomes = map(lambda p: p['idade'] * 1.20, pessoas)  # nomes = map(lambda p: p['nome'], pessoas)
+nomes = map(aumenta_idade, pessoas)  # nomes = map(lambda p: p['nome'], pessoas)
 
 for pessoa in nomes:
     print(pessoa)
