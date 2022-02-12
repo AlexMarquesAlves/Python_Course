@@ -14,7 +14,7 @@ def filtra(produto):
         return False
 
 
-nova_lista = filter(lambda p: p['preco'] > 50, produtos)
+nova_lista = filter(filtra, produtos)
 
 for produto in nova_lista:
     print(produto)
