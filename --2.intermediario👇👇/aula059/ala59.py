@@ -3,8 +3,12 @@ def converte_numero(valor):
         valor = int(valor)
         return valor
     except ValueError as error:
-        pass
+        try:
+            valor = float(valor)
+            return valor
+        except ValueError:
+            pass
 
 
 numero = converte_numero(input('Digite um número: '))
-print(numero + 5)
+print(numero * 5)
