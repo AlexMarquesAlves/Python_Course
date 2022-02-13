@@ -5,7 +5,7 @@
 # https://docs.python.org/3/py-modindex.html
 from sys import platform as so  # módulo sys
 from random import randint as randint_original, random
-import pymysql  # pip install pymysql
+import pymysql  # pip install pymysql | pip uninstall pymysql
 
 print(f'\t\tExemplo módulo - sys')
 print(so)
