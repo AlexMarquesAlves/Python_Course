@@ -6,4 +6,7 @@ def divide(n1, n2):
     return n1 / n2
 
 
-print(divide(2, 0))
+try:
+    print(divide(2, 0))
+except ValueError as error:
+    print(error)
