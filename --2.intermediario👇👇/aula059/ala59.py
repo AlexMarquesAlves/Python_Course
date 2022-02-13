@@ -10,5 +10,9 @@ def converte_numero(valor):
             pass
 
 
-numero = converte_numero(input('Digite um número: '))
-print(numero * 5)
+while True:
+    numero = converte_numero(input('Digite um número: '))
+    if numero is not None:
+        print(numero * 5)
+    else:
+        print(f'\t!! Isso não é número. !!')
