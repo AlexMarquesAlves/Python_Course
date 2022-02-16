@@ -1,7 +1,5 @@
-import calculos
+from calculos import multiplica
+from outro import fala_oi
 
-print(calculos.PI)
-
-lista = [2, 4]
-
-print(calculos.multiplica(lista))
+print(multiplica([2, 4]))
+fala_oi()
