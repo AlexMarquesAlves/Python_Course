@@ -1,7 +1,8 @@
-from formata import preco
+from vendas.formata import preco
+
 
 def aumento(valor, porcentagem, formata=False):
-    r = valor + (valor * (porcentagem/100))
+    r = valor + (valor * (porcentagem / 100))
 
     if formata:
         return preco.real(r)
@@ -16,5 +17,3 @@ def reducao(valor, porcentagem, formata=False):
         return preco.real(r)
     else:
         return r
-
-
