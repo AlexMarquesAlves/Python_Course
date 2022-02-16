@@ -1,6 +1,6 @@
 
-import vendas.calc_precos
+from vendas import calc_precos
 
-preco = 49.90
-preco_com_aumento = vendas.calc_precos.aumento(preco, 15)
-print(preco_com_aumento)
+price = 49.90
+price_com_aumento = calc_precos.aumento(valor=price, porcentagem=15)
+print(price_com_aumento)
