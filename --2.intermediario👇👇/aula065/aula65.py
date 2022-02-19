@@ -8,15 +8,40 @@ variavel = fala_oi
 print(type(variavel))  # function
 variavel()  # Oi
 
+
 # Uma função dentro de outra
 def master():
     # Função interna
     def slave():
         print('Oi')
+
     # Função a ser executada
     return slave
+
 
 # Variável recebe função
 variavel = master()
 # Executa a função interna de master
+variavel()
+
+
+# Função como parâmetro
+def master(funcao):
+    # Função interna
+    def slave():
+        # executa a função enviada
+        funcao()
+
+    # Retorna a função interna sem executar
+    return slave
+
+
+# Uma função qualquer
+def fala_oi():
+    print('Oi')
+
+
+# Variável como função
+variavel = master(fala_oi)
+# Executa a variável/função
 variavel()
