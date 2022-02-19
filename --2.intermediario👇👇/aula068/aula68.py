@@ -24,9 +24,16 @@ Recap.
 """
 import cnpj
 
-cnpj1 = ''
+while True:
+    cnpj1 = input(f'\nDigite o CNPJ que desejas Verificar: ')
 
-if cnpj.valida(cnpj1):
-    print(f'{cnpj1} é Válido')
-else:
-    print(f'{cnpj1} é Inválido')
+    if cnpj.valida(cnpj1):
+        print(f'\t{cnpj1} é Válido')
+    else:
+        print(f'\t{cnpj1} é Inválido')
+
+    sair = input('Desejas sair? [s]im ou [n]ão. ')
+    if sair == 's':
+        break
+    else:
+        continue
