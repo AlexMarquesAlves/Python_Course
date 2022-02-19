@@ -13,6 +13,7 @@ clientes3 = lista_de_clientes(['José'])
 
 print(clientes1)
 print(clientes2)
+print(clientes3)
 
 print(f'\n', '!'*10, 'Função corrigida', '!'*10)
 
