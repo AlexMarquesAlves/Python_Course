@@ -109,6 +109,7 @@ def fala_oi(msg):
 fala_oi('Olá, sou Luiz')
 
 
+# Função que calcula tempo de execução de uma função
 def velocidade(funcao):
     """
     Função decoradora: Verifica o tempo que uma função leva para executar
@@ -125,7 +126,7 @@ def velocidade(funcao):
         # Resultado de tempo em ms
         tempo = (end - start) * 1000
         # Mostra o tempo
-        print(f'\nA função levou {tempo:.2f}ms para ser executada.')
+        print(f'\nA função "{funcao.__name__}" levou {tempo:.2f}ms para ser executada.')
         # Retorna a função original executada
         return resultado
 
