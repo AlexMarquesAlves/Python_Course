@@ -68,3 +68,17 @@ def fala_oi():
 # Decorando
 fala_oi = master(fala_oi)
 fala_oi()
+
+# Função decoradora
+def master(funcao):
+    def slave():
+        print('Estou decorada.')
+        funcao()
+    return slave
+
+# Sintax sugar do decorador
+@master
+def fala_oi():
+    print('Oi')
+
+fala_oi()
