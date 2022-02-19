@@ -21,3 +21,12 @@ with open('abc.txt', 'w+') as file:
 print('Somente leitura')
 with open('abc.txt', 'r') as file:
     print(file.read())
+
+print('Append mode')
+with open('abc.txt', 'a+') as file:
+    file.write('Outra Linha\n')
+    file.write('Outra Linha\n')
+    file.write('Outra Linha\n')
+
+    file.seek(0)
+    print(file.read())
