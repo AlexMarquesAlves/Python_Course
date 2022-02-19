@@ -45,3 +45,26 @@ def fala_oi():
 variavel = master(fala_oi)
 # Executa a variável/função
 variavel()
+
+
+# Recebe uma função
+def master(funcao):
+    # Cria uma função interna
+    def slave():
+        # Decora
+        print('Estou decorada.')
+        # Executa a função enviada
+        funcao()
+
+    # Retorna a função interna sem executar
+    return slave
+
+
+# Uma função qualquer
+def fala_oi():
+    print('Oi')
+
+
+# Decorando
+fala_oi = master(fala_oi)
+fala_oi()
