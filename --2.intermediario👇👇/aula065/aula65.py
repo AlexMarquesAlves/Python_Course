@@ -69,16 +69,37 @@ def fala_oi():
 fala_oi = master(fala_oi)
 fala_oi()
 
+
 # Função decoradora
 def master(funcao):
     def slave():
         print('Estou decorada.')
         funcao()
+
     return slave
+
 
 # Sintax sugar do decorador
 @master
 def fala_oi():
     print('Oi')
 
+
 fala_oi()
+
+
+# Decorando com parâmetros
+def master(funcao):
+    def slave(*args, **kwargs):
+        print('Estou decorada.')
+        funcao(*args, **kwargs)
+
+    return slave
+
+
+@master
+def fala_oi(msg):
+    print(msg)
+
+
+fala_oi('Olá, sou Luiz')
