@@ -1,4 +1,4 @@
-
+import os
 
 try:
     file = open('abc.txt', 'w+')
@@ -30,3 +30,5 @@ with open('abc.txt', 'a+') as file:
 
     file.seek(0)
     print(file.read())
+
+os.remove('abc.txt')
