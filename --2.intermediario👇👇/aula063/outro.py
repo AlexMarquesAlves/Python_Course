@@ -17,3 +17,7 @@ with open('abc.txt', 'w+') as file:
 
     file.seek(0)
     print(file.read())
+
+print('Somente leitura')
+with open('abc.txt', 'r') as file:
+    print(file.read())
