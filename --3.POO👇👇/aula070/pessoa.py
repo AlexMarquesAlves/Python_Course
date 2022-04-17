@@ -7,8 +7,16 @@ class Pessoa:
 
     def comer(self, alimento):
         if self.comendo:
-            print(f'{self.nome} já está a comer')
+            print(f'{self.nome} já está a comer...')
             return
 
         print(f'{self.nome} está comendo {alimento}...')
         self.comendo=True
+
+    def parar_comer(self):
+        if not self.comendo:
+            print(f' {self.nome} não está a comer...')
+            return
+
+        print(f'{self.nome} parou da de comer...')
+        self.comendo=False
