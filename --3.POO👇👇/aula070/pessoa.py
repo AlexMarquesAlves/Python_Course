@@ -13,7 +13,7 @@ class Pessoa:
             print(f'{self.nome} já está a falar...')
             return
 
-        print(f'{self.nome} está a falar...')
+        print(f'{self.nome} está a falar sobre {assunto}...')
         self.falando=True
 
     def comer(self, alimento):
