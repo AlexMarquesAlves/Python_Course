@@ -18,7 +18,12 @@ from pessoa import Pessoa
 print(f'-' * 20)
 p1 = Pessoa('Luiz', 29)
 p1.comer('Maça')
-p1.comer('Maça')
+p1.parar_comer()
+# Ponendo persona a hablar
+p1.falar('POO')
+
+
+
 
 
 # p2 = Pessoa(f'João, {32}')
