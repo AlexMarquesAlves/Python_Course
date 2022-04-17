@@ -12,11 +12,13 @@ from pessoa import Pessoa
 # p1.nome = 'Luiz'
 # p2.nome = 'João'
 # print(p2.nome)
-# print(f'-' * 20)
+
 
 # Atribuindo direto na classe
-
-p1 = Pessoa(f'Luiz, {29}')
+print(f'-' * 20)
+p1 = Pessoa('Luiz', 29)
+p1.comer('Maça')
+p1.comer('Maça')
 
 
 # p2 = Pessoa(f'João, {32}')
