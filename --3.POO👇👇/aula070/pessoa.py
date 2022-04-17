@@ -52,5 +52,4 @@ class Pessoa:
         self.comendo=False
 
     def get_ano_nascimento(self):
-        pass
-        # return ano_atual - self.idade
+        return self.ano_atual - self.idade

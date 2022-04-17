@@ -29,9 +29,10 @@ print(f'-'*20)
 p1.falar('POO')
 p2.falar('Filmes ')
 p1.comer('Churrasco')
+print(f'-'*20)
 
-
-
+print(p1.get_ano_nascimento())
+print(p2.get_ano_nascimento())
 
 
 
