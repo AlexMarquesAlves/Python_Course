@@ -32,6 +32,7 @@ class Pessoa:
             return
         if self.falando:
             print(f'{self.nome} não comer enquanto estás a falar...')
+            return
 
         print(f'{self.nome} está comendo {alimento}...')
         self.comendo=True
@@ -44,3 +45,7 @@ class Pessoa:
 
         print(f'{self.nome} parou da de comer...')
         self.comendo=False
+
+    def get_ano_nascimento(self):
+        pass
+        # return ano_atual - self.idade

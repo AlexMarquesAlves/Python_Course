@@ -17,11 +17,19 @@ from pessoa import Pessoa
 # Atribuindo direto na classe
 print(f'-' * 20)
 p1 = Pessoa('Luiz', 29)
+p2 = Pessoa('João',32)
 p1.comer('Maça')
 p1.parar_comer()
 # Ponendo persona a hablar
 p1.falar('POO')
 p1.parar_falar()
+
+print(f'-'*20)
+# Metodos independentes
+p1.falar('POO')
+p2.falar('Filmes ')
+p1.comer('Churrasco')
+
 
 
 
