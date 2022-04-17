@@ -19,10 +19,10 @@ class Pessoa:
     """Função Parar de Falar"""
     def parar_falar(self):
         if not self.falando:
-            print(f'{self.nome} não está a falar ')
+            print(f'{self.nome} não está a falar...')
             return
 
-        print(f'{self.nome} parou de falar')
+        print(f'{self.nome} parou de falar...')
         self.falando=False
 
     """Função Comer"""
@@ -30,6 +30,8 @@ class Pessoa:
         if self.comendo:
             print(f'{self.nome} já está a comer...')
             return
+        if self.falando:
+            print(f'{self.nome} não comer enquanto estás a falar...')
 
         print(f'{self.nome} está comendo {alimento}...')
         self.comendo=True
