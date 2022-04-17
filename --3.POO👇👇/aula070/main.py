@@ -21,6 +21,7 @@ p1.comer('Maça')
 p1.parar_comer()
 # Ponendo persona a hablar
 p1.falar('POO')
+p1.parar_falar()
 
 
 
