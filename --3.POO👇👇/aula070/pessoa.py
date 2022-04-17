@@ -5,6 +5,17 @@ class Pessoa:
         self.comendo = comendo
         self.falando = falando
 
+    def falar(self,assunto):
+        if self.comendo:
+            print(f'{self.nome} não pode falar enquanto estás a comer...')
+            return
+        if self.falando:
+            print(f'{self.nome} já está a falar...')
+            return
+
+        print(f'{self.nome} está a falar...')
+        self.falando=True
+
     def comer(self, alimento):
         if self.comendo:
             print(f'{self.nome} já está a comer...')
